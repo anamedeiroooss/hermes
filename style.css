@@ -1,0 +1,187 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+ 
+/* Cabeçalho */
+header {
+    background: linear-gradient(to right, #ff9900e7, #e9dfb4);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+ 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+ 
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+ 
+/* Seções */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+ 
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff9900e7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ 
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #000000e7;
+}
+ 
+/* Seção Serviços */
+#servicos ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+ 
+#servicos ul li {
+    background-color: #ff9900e7;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 250px;
+}
+ 
+#servicos ul li:hover {
+    transform: scale(1.05);
+    background-color: #d8690f;
+}
+ 
+/* Seção Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+ 
+form label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    align-self: flex-start;
+    color: #333;
+}
+ 
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #e28c0c;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+ 
+form input:focus, form textarea:focus {
+    border-color: #e99637;
+    outline: none;
+}
+ 
+form button {
+    padding: 0.8rem 2rem;
+    background-color: #ce6815;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+form button:hover {
+    background-color: #0056b3;
+}
+ 
+/* Rodapé */
+footer {
+    background-color: #f19c1ce7;;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+ 
+footer p {
+    margin: 0.5rem 0;
+}
+ 
+footer a {
+    color: #f35f09;
+    text-decoration: none;
+}
+ 
+footer a:hover {
+    text-decoration: underline;
+}
+ 
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+ 
+    #servicos ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+ 
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+ 
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
+ 
+ 
